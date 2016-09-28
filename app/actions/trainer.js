@@ -77,6 +77,8 @@ function parseInventory(inventory) {
     const stamina = stats.BaseStamina + p.individual_stamina
 
     const maxCP = utils.getMaxCpForTrainerLevel(attack, defense, stamina, player.level)
+    const spriteMaxCP = utils.getMaxCpForTrainerLevel(stats.BaseAttack + 15, stats.BaseDefense + 15, stats.BaseStamina + 15, player.level)
+
     const candyCost = utils.getCandyCostsForPowerup(totalCpMultiplier, p.num_upgrades)
     const stardustCost = utils.getStardustCostsForPowerup(totalCpMultiplier, p.num_upgrades)
     const candyMaxCost = utils.getMaxCandyCostsForPowerup(
@@ -101,6 +103,7 @@ function parseInventory(inventory) {
       cp: p.cp,
       next_cp: nextCP,
       max_cp: maxCP,
+      sprite_max_cp_current_level: spriteMaxCP,
       candy_cost: candyCost,
       candy_max_cost: candyMaxCost,
       stardust_cost: stardustCost,

@@ -142,6 +142,9 @@ const Pokemon = React.createClass({
       const pokeiv = `${pokemon.iv}% (${pokemon.attack}/${pokemon.defense}/${pokemon.stamina})`
       const powerUpTip = this.getPowerUpTip(pokemon)
       const cpTip = `Max CP: ${pokemon.max_cp}`
+
+      console.log('sprite_max_cp_current_level', pokemon.sprite_max_cp_current_level);
+
       const ivTip = (<span>
         {`Attack: ${pokemon.attack}`}
         <br />
@@ -151,8 +154,19 @@ const Pokemon = React.createClass({
       </span>)
       const isChecked = pokemonState[String(pokemon.id)].check
 
+      pokemon.cpPr = ~~(pokemon.cp * 1000 / pokemon.sprite_max_cp_current_level) / 10
+      let ivLevel = pokemon.iv >= 80 ? 'high' : (pokemon.iv >= 50 ? 'middle' : 'low')
+      let cpLevel = pokemon.cpPr >= 80 ? 'high' : (pokemon.cpPr >= 50 ? 'middle' : 'low')
+
+      let niceIv = pokemon.iv > 90;
+      let niceCP = pokemon.cpPr > 90;
+
       return (
-        <tr key={pokemon.id}>
+        <tr
+          className={`is-iv-${ivLevel} is-cp-${cpLevel}`}
+          key={pokemon.id}
+        >
+
           <td>
             <input
               type="checkbox"
@@ -194,7 +208,7 @@ const Pokemon = React.createClass({
               {pokemon.nickname}
             </a>
           </td>
-          <td>
+          <td data-pr={pokemon.cpPr} data-nice-pr={niceCP}>
             <Tooltip
               placement="right"
               id="cp_tooltip"
@@ -206,7 +220,7 @@ const Pokemon = React.createClass({
               {pokemon.cp}
             </Tooltip>
           </td>
-          <td>
+          <td data-nice-pr={niceIv}>
             <Tooltip
               placement="right"
               id="iv_tooltip"

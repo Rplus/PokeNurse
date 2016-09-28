@@ -1004,3 +1004,74 @@ input#toggle,
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.02) inset, 0 0 3px rgba(0, 0, 0, 0.2);
   outline: 0 none;
 }
+
+
+/* custom style */
+.table-container h1 {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  background-color: #ccc;
+}
+
+input[type="checkbox"] {
+  width: 2rem;
+  height: 2rem;
+}
+
+.table-container {
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+
+[data-pr]::after {
+  content: " ~" attr(data-pr) "%";
+  display: inline-block;
+  vertical-align: super;
+  padding-left: .5em;
+  opacity: .7;
+  font-size: smaller;
+}
+
+[aria-describedby="iv_tooltip"],
+[aria-describedby="cp_tooltip"] {
+  padding: 3px 5px;
+}
+
+.is-cp-middle [aria-describedby="cp_tooltip"],
+.is-iv-middle [aria-describedby="iv_tooltip"] {
+  color: #900;
+  background-color: #ffd;
+}
+
+.is-cp-low [aria-describedby="cp_tooltip"],
+.is-iv-low [aria-describedby="iv_tooltip"] {
+  color: #f00;
+  background-color: #fcc;
+}
+
+[data-nice-pr][data-nice-pr][data-nice-pr="true"] {
+  font-weight: 900;
+}
+
+.is-cp-low.is-iv-middle td:nth-of-type(-n + 3),
+.is-cp-middle.is-iv-low td:nth-of-type(-n + 3) {
+  background-color: rgba(0,0,0,.1);
+}
+
+.is-cp-low.is-iv-low td:nth-of-type(-n + 3) {
+  background-color: rgba(0,0,0,.3);
+}
+
+td {
+  font-size: larger;
+}
+
+td:nth-of-type(n+6) {
+  font-family: monospace;
+}
