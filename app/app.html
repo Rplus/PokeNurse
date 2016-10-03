@@ -12,6 +12,15 @@
         script.src = (process.env.HOT) ? 'http://localhost:3009/dist/bundle.js' : '../dist/bundle.js';
         document.write(script.outerHTML);
       }());
+
+      window.showAll = function () {
+        let clickableDetailsBtn = document.querySelectorAll('tr:not(.shown) .details-control');
+        clickableDetailsBtn.forEach((i) => {
+          if (+i.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.textContent !== 1) {
+            i.click();
+          }
+        });
+      };
     </script>
   </body>
 </html>

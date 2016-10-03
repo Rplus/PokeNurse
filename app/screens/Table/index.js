@@ -169,6 +169,14 @@ const Table = React.createClass({
             <span className="pull-right">
               <input
                 type="button"
+                className="btn btn-info"
+                id="transfer-btn"
+                value="show all"
+                onClick={this.delayShowAll}
+              />
+              {" "}
+              <input
+                type="button"
                 className="btn btn-warning"
                 id="transfer-btn"
                 value="Transfer"
@@ -254,6 +262,10 @@ const Table = React.createClass({
     })
 
     return checkedPokemon
+  },
+
+  delayShowAll() {
+    setTimeout(window.showAll, 0)
   },
 
   handleTransfer() {

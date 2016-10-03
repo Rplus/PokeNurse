@@ -28,8 +28,8 @@ function preventUnusedElectronDebug() {
 
 function createWindow() {
   mainWindow = new BrowserWindow({
-    width: 800,
-    height: 375,
+    width: 900,
+    height: 600,
     title: 'PokéNurse',
     icon: '../app/app.png',
     show: false

@@ -1068,10 +1068,7 @@ input[type="checkbox"] {
   background-color: rgba(0,0,0,.3);
 }
 
-td {
-  font-size: larger;
-}
-
 td:nth-of-type(n+6) {
+  font-size: larger;
   font-family: monospace;
 }
