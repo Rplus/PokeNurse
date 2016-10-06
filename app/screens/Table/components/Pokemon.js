@@ -154,7 +154,7 @@ const Pokemon = React.createClass({
       </span>)
       const isChecked = pokemonState[String(pokemon.id)].check
 
-      pokemon.cpPr = ~~(pokemon.cp * 1000 / pokemon.sprite_max_cp_current_level) / 10
+      pokemon.cpPr = ~~((pokemon.cp - pokemon.sprite_min_cp_current_level) * 1000 / (pokemon.sprite_max_cp_current_level - pokemon.sprite_min_cp_current_level)) / 10
       let ivLevel = pokemon.iv >= 80 ? 'high' : (pokemon.iv >= 50 ? 'middle' : 'low')
       let cpLevel = pokemon.cpPr >= 80 ? 'high' : (pokemon.cpPr >= 50 ? 'middle' : 'low')
 
