@@ -13,6 +13,21 @@
         document.write(script.outerHTML);
       }());
 
+      window.hideAll = function () {
+        let clickableDetailsBtn = document.querySelectorAll('tr.shown .details-control');
+        clickableDetailsBtn.forEach((i) => {
+          i.click();
+        });
+      };
+
+      window.showPer = function (number = 30) {
+        let clickableDetailsBtn = [].slice.call(document.querySelectorAll('.table-condensed.no-footer > tbody > tr:not(.child):not(.shown) .details-control'), 0, number);
+
+        clickableDetailsBtn.forEach((i) => {
+          i.click();
+        });
+      };
+
       window.showAll = function () {
         let clickableDetailsBtn = document.querySelectorAll('tr:not(.shown) .details-control');
         clickableDetailsBtn.forEach((i) => {

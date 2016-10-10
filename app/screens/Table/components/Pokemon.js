@@ -143,8 +143,6 @@ const Pokemon = React.createClass({
       const powerUpTip = this.getPowerUpTip(pokemon)
       const cpTip = `Max CP: ${pokemon.max_cp}`
 
-      console.log('sprite_max_cp_current_level', pokemon.sprite_max_cp_current_level);
-
       const ivTip = (<span>
         {`Attack: ${pokemon.attack}`}
         <br />
