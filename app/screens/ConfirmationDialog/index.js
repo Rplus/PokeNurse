@@ -37,7 +37,7 @@ const ConfirmationDialog = React.createClass({
       secondaryButton = (
         <button
           type="button"
-          className="btn btn-warning"
+          className="btn btn-default"
           onClick={this.handleSecondary}
         >
           {secondaryText}
@@ -71,7 +71,7 @@ const ConfirmationDialog = React.createClass({
             {secondaryButton}
             <button
               type="button"
-              className="btn btn-primary"
+              className="btn btn-default"
               onClick={this.handlePrimary}
             >
               {primaryText}
