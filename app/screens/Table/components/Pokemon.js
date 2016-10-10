@@ -195,7 +195,7 @@ const Pokemon = React.createClass({
               P↑
             </Tooltip>
           </td>
-          <td title={`max cp = ${pokemon.sprite_max_cp_current_level}`}>
+          <td title={`max cp = ${pokemon.max_cp} / ${pokemon.sprite_max_cp_current_level}`}>
             {pokemon.name}
           </td>
           <td onClick={this.handleClickNickname.bind(this, pokemon, species)}>
