@@ -101,6 +101,7 @@ const LoginForm = React.createClass({
             placeholder="Username"
             ref={(c) => { this.username = c }}
             onKeyPress={this.handleEnterKey}
+            autoFocus
             defaultValue={credentials.username || ''}
           />
         </div>
