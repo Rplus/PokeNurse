@@ -902,6 +902,7 @@
       "cinematicMoves": [
         84,
         131,
+        86,
         88
       ]
     },
@@ -1160,6 +1161,7 @@
       "evolvesFrom": 0,
       "quickMoves": [
         216,
+        233,
         220
       ],
       "cinematicMoves": [
@@ -1183,6 +1185,7 @@
       "evolvesFrom": "Diglett",
       "quickMoves": [
         203,
+        233,
         216
       ],
       "cinematicMoves": [
@@ -1742,6 +1745,7 @@
       "evolvesFrom": "Geodude",
       "quickMoves": [
         227,
+        233,
         216
       ],
       "cinematicMoves": [
@@ -1766,6 +1770,7 @@
       "evolvesFrom": "Graveler",
       "quickMoves": [
         227,
+        233,
         216
       ],
       "cinematicMoves": [
@@ -2003,6 +2008,7 @@
       "evolvesFrom": 0,
       "quickMoves": [
         217,
+        212,
         230
       ],
       "cinematicMoves": [
@@ -2049,6 +2055,7 @@
       "evolvesTo": "Muk",
       "evolvesFrom": 0,
       "quickMoves": [
+        224,
         225,
         233
       ],
@@ -2072,6 +2079,7 @@
       "evolvesTo": 0,
       "evolvesFrom": "Grimer",
       "quickMoves": [
+        212,
         225,
         224
       ],
@@ -2197,6 +2205,7 @@
       "cinematicMoves": [
         70,
         16,
+        90,
         91
       ]
     },
@@ -2473,6 +2482,7 @@
         241
       ],
       "cinematicMoves": [
+        123,
         127,
         56,
         32
@@ -2638,6 +2648,7 @@
       ],
       "cinematicMoves": [
         108,
+        14,
         30,
         86
       ]
@@ -2793,6 +2804,7 @@
       "evolvesTo": "Starmie",
       "evolvesFrom": 0,
       "quickMoves": [
+        221,
         219,
         230
       ],
@@ -2817,10 +2829,12 @@
       "evolvesTo": 0,
       "evolvesFrom": "Staryu",
       "quickMoves": [
+        221,
         219,
         230
       ],
       "cinematicMoves": [
+        108,
         107,
         65,
         30
@@ -3181,6 +3195,7 @@
       "evolvesTo": 0,
       "evolvesFrom": 0,
       "quickMoves": [
+        234,
         219,
         221
       ],
@@ -3229,6 +3244,7 @@
       "evolvesTo": 0,
       "evolvesFrom": "Omanyte",
       "quickMoves": [
+        216,
         227,
         230
       ],
@@ -3510,12 +3526,12 @@
         222
       ],
       "cinematicMoves": [
+        40,
         122,
         31,
         108,
         82,
         78,
-        87,
         103,
         116,
         14
