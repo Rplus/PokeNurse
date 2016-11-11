@@ -157,6 +157,10 @@
   padding: 7px 0px;
 }
 
+.progress-bar.active, .progress.active .progress-bar {
+  animation: none;
+}
+
 .table-container {
   margin-top: 65px;
 }
