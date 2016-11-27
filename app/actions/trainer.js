@@ -88,6 +88,8 @@ function parseInventory(inventory) {
       totalCpMultiplier
     )
 
+    const pmLevel = utils.getLevelFromCpMultiplier(totalCpMultiplier)
+
     const stardustMaxCost = utils.getMaxStardustCostsForPowerup(
       player.level,
       p.num_upgrades,
@@ -101,6 +103,7 @@ function parseInventory(inventory) {
     // TODO Use CamelCase instead of under_score for all keys except responses
     const pokemonWithStats = {
       iv,
+      level: pmLevel,
       cp: p.cp,
       next_cp: nextCP,
       max_cp: maxCP,

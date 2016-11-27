@@ -206,7 +206,7 @@ const Pokemon = React.createClass({
               {pokemon.nickname}
             </a>
           </td>
-          <td data-pr={pokemon.cpPr} data-nice-pr={niceCP}>
+          <td data-pr={pokemon.cpPr} data-level={pokemon.level} data-nice-pr={niceCP}>
             <Tooltip
               placement="right"
               id="cp_tooltip"

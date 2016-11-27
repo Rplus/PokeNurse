@@ -1034,12 +1034,14 @@ input[type="checkbox"] {
 }
 
 [data-pr]::after {
-  content: " ~" attr(data-pr) "%";
+  content: "" attr(data-level) ", ~" attr(data-pr) "%";
   display: inline-block;
   vertical-align: super;
   padding-left: .5em;
-  opacity: .7;
+  opacity: .6;
   font-size: smaller;
+  font-weight: 100;
+  font-style: italic;
 }
 
 [aria-describedby="iv_tooltip"],
