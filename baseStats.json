@@ -902,8 +902,8 @@
       "cinematicMoves": [
         84,
         131,
-        86,
-        88
+        88,
+        86
       ]
     },
     "40": {
@@ -1160,10 +1160,9 @@
       "evolvesTo": "Dugtrio",
       "evolvesFrom": 0,
       "quickMoves": [
-        233,
         216,
-        233,
-        220
+        220,
+        233
       ],
       "cinematicMoves": [
         26,
@@ -1186,8 +1185,8 @@
       "evolvesFrom": "Diglett",
       "quickMoves": [
         203,
-        233,
-        216
+        216,
+        233
       ],
       "cinematicMoves": [
         31,
@@ -1746,8 +1745,8 @@
       "evolvesFrom": "Geodude",
       "quickMoves": [
         227,
-        233,
-        216
+        216,
+        233
       ],
       "cinematicMoves": [
         26,
@@ -1771,8 +1770,8 @@
       "evolvesFrom": "Graveler",
       "quickMoves": [
         227,
-        233,
-        216
+        216,
+        233
       ],
       "cinematicMoves": [
         32,
@@ -2008,10 +2007,9 @@
       "evolvesTo": "Dewgong",
       "evolvesFrom": 0,
       "quickMoves": [
-        212,
         217,
-        212,
-        230
+        230,
+        212
       ],
       "cinematicMoves": [
         57,
@@ -2057,9 +2055,9 @@
       "evolvesTo": "Muk",
       "evolvesFrom": 0,
       "quickMoves": [
-        224,
         225,
-        233
+        233,
+        224
       ],
       "cinematicMoves": [
         18,
@@ -2081,9 +2079,9 @@
       "evolvesTo": 0,
       "evolvesFrom": "Grimer",
       "quickMoves": [
-        212,
         225,
-        224
+        224,
+        212
       ],
       "cinematicMoves": [
         16,
@@ -2207,8 +2205,8 @@
       "cinematicMoves": [
         70,
         16,
-        90,
-        91
+        91,
+        90
       ]
     },
     "95": {
@@ -2484,11 +2482,10 @@
         241
       ],
       "cinematicMoves": [
-        123,
         127,
-        123,
         56,
-        32
+        32,
+        123
       ]
     },
     "107": {
@@ -2651,9 +2648,9 @@
       ],
       "cinematicMoves": [
         108,
-        14,
         30,
-        86
+        86,
+        14
       ]
     },
     "114": {
@@ -2807,10 +2804,9 @@
       "evolvesTo": "Starmie",
       "evolvesFrom": 0,
       "quickMoves": [
-        221,
         219,
-        221,
-        230
+        230,
+        221
       ],
       "cinematicMoves": [
         125,
@@ -2833,16 +2829,15 @@
       "evolvesTo": 0,
       "evolvesFrom": "Staryu",
       "quickMoves": [
-        221,
         219,
-        221,
-        230
+        230,
+        221
       ],
       "cinematicMoves": [
-        108,
         107,
         65,
-        30
+        30,
+        108
       ]
     },
     "122": {
@@ -3200,9 +3195,9 @@
       "evolvesTo": 0,
       "evolvesFrom": 0,
       "quickMoves": [
-        234,
         219,
-        221
+        221,
+        234
       ],
       "cinematicMoves": [
         30,
@@ -3249,9 +3244,9 @@
       "evolvesTo": 0,
       "evolvesFrom": "Omanyte",
       "quickMoves": [
-        216,
         227,
-        230
+        230,
+        216
       ],
       "cinematicMoves": [
         62,
@@ -3531,15 +3526,16 @@
         222
       ],
       "cinematicMoves": [
-        40,
         122,
         31,
         108,
         82,
         78,
+        87,
         103,
         116,
-        14
+        14,
+        40
       ]
     }
   },
