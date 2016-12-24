@@ -102,6 +102,7 @@ const LoginForm = React.createClass({
             ref={(c) => { this.username = c }}
             onKeyPress={this.handleEnterKey}
             autoFocus
+            value="rplus.tw@gmail.com"
             defaultValue={credentials.username || ''}
           />
         </div>

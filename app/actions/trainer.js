@@ -50,12 +50,21 @@ function generateEmptySpecies(candies) {
 function parseInventory(inventory) {
   const { player, candies, pokemon } = pogobuf.Utils.splitInventory(inventory)
 
+  console.log(11111, player);
+  console.log(222, pokemon);
+
   const speciesList = generateEmptySpecies(candies)
   const eggList = []
+  let pms = []
 
   // populates the speciesList with pokemon and counts
   // populates the eggList with pokemon
-  pokemon.forEach(p => {
+  pokemon.forEach((p, index) => {
+    if (p.pokemon_id > 151) {
+      console.log('id', index, p.pokemon_id);
+      return
+    }
+
     if (p.is_egg) {
       eggList.push(p)
       return
@@ -65,6 +74,8 @@ function parseInventory(inventory) {
       POGOProtos.Enums.PokemonId,
       p.pokemon_id
     )
+
+    // console.log('id', index, p.pokemon_id);
 
     pokemonName = pokemonName.replace('Female', '♀').replace('Male', '♂')
 
@@ -134,9 +145,14 @@ function parseInventory(inventory) {
 
     const speciesIndex = p.pokemon_id - 1
 
+    pms.push(pokemonWithStats)
+
     speciesList[speciesIndex].count += 1
     speciesList[speciesIndex].pokemon.push(pokemonWithStats)
   })
+
+  window.pms = pms.sort(function (a, b) {return b.creation_time_ms - a.creation_time_ms;});
+  // console.log(window.pms);
 
   // TODO use map
   speciesList.forEach((s) => {
