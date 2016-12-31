@@ -61,7 +61,7 @@ function parseInventory(inventory) {
   // populates the eggList with pokemon
   pokemon.forEach((p, index) => {
     if (p.pokemon_id > 151) {
-      console.log('id', index, p.pokemon_id);
+      console.log('id', index, p.pokemon_id, p);
       return
     }
 
